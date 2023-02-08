@@ -1,0 +1,31 @@
+.preview {
+  padding: 28px 0 100px 0;
+  position: relative;
+
+  @include phones-l {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.preview__life {
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.bgc_blue {
+  position: absolute;
+  right: 0;
+  top: -168px;
+  width: 50vw;
+  height: 900px;
+  background: rgba(146, 242, 255, 0.15);
+  z-index: -1;
+
+  @include phones-l {
+    right: -9px;
+    top: -400px;
+  }
+}
