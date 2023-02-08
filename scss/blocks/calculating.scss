@@ -101,6 +101,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include phones-l {
+    padding: 0 10px;
+  }
 }
 
 .calculating__result {

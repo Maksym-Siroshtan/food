@@ -14,9 +14,6 @@
   display: flex;
   justify-content: space-between;
   max-width: 550px;
-  @include phones-l {
-    flex-wrap: wrap;
-  }
 }
 
 .header__right-block {
@@ -30,7 +27,7 @@
   margin-right: 50px;
 
   @include phones-l {
-    margin: 0 auto;
+    margin-right: 20px;
   }
 }
 
@@ -49,6 +46,10 @@
   font-weight: 700;
   font-size: 18px;
   color: #303030;
+
+  @include phones-l {
+    margin-right: 0;
+  }
 }
 
 .header__link:after {

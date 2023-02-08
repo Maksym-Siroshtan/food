@@ -13,6 +13,11 @@
   font-size: 20px;
   margin-left: 35px;
   margin-top: 35px;
+
+  @include phones-l {
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .bgc_blue {
@@ -26,6 +31,6 @@
 
   @include phones-l {
     right: -9px;
-    top: -400px;
+    top: -408px;
   }
 }

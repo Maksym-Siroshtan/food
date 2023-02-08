@@ -395,12 +395,6 @@ a {
           justify-content: space-between;
   max-width: 550px;
 }
-@media screen and (max-width: 450px) {
-  .header__left-block {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 
 @media screen and (max-width: 450px) {
   .header__right-block {
@@ -414,7 +408,7 @@ a {
 }
 @media screen and (max-width: 450px) {
   .header__logo {
-    margin: 0 auto;
+    margin-right: 20px;
   }
 }
 
@@ -437,6 +431,11 @@ a {
   font-weight: 700;
   font-size: 18px;
   color: #303030;
+}
+@media screen and (max-width: 450px) {
+  .header__link {
+    margin-right: 0;
+  }
 }
 
 .header__link:after {
@@ -535,6 +534,7 @@ a {
   .tabcontainer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 20px;
   }
 }
 
@@ -544,7 +544,8 @@ a {
 }
 @media screen and (max-width: 450px) {
   .tabcontent {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+    height: 280px;
   }
 }
 
@@ -570,10 +571,10 @@ a {
 }
 @media screen and (max-width: 450px) {
   .tabcontent__descr {
-    top: 116px;
+    top: 190px;
     right: 0;
-    max-width: 240px;
-    max-height: 200px;
+    max-width: 345px;
+    height: 150px;
     padding: 6px;
     font-size: 17px;
     font-weight: 300;
@@ -588,7 +589,8 @@ a {
 }
 @media screen and (max-width: 450px) {
   .tabheader {
-    padding: 5px;
+    padding: 5px 5px 5px 25px;
+    text-align: end;
   }
 }
 
@@ -611,6 +613,7 @@ a {
   .tabheader__items {
     padding: 0;
     border-left: none;
+    margin: 0;
   }
 }
 
@@ -651,6 +654,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
   z-index: 100;
+}
+@media screen and (max-width: 450px) {
+  .sidepanel {
+    left: 2px;
+  }
 }
 
 .sidepanel__text {
@@ -742,6 +750,12 @@ a {
   margin-left: 35px;
   margin-top: 35px;
 }
+@media screen and (max-width: 450px) {
+  .preview__life {
+    margin: 0;
+    text-align: center;
+  }
+}
 
 .bgc_blue {
   position: absolute;
@@ -755,7 +769,7 @@ a {
 @media screen and (max-width: 450px) {
   .bgc_blue {
     right: -9px;
-    top: -400px;
+    top: -408px;
   }
 }
 
@@ -800,7 +814,7 @@ a {
 }
 @media screen and (max-width: 450px) {
   .offer__text {
-    padding: 0 20px;
+    padding: 0 40px;
     margin-bottom: 20px;
   }
 }
@@ -835,8 +849,8 @@ a {
 }
 @media screen and (max-width: 450px) {
   .offer__advantages {
-    margin: 0;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 20px 0;
   }
 }
 
@@ -844,6 +858,11 @@ a {
   font-weight: 700;
   font-size: 20px;
   margin-top: 20px;
+}
+@media screen and (max-width: 450px) {
+  .offer__advantages h2 {
+    text-align: center;
+  }
 }
 
 .offer__advantages h2:first-child {
@@ -863,7 +882,7 @@ a {
 }
 
 .offer__slider {
-  width: 650px;
+  max-width: 650px;
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -876,17 +895,27 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media screen and (max-width: 450px) {
+  .offer__slider {
+    max-width: 414px;
+  }
+}
 
 .offer__slider-counter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 180px;
+  max-width: 180px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 24px;
   color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 450px) {
+  .offer__slider-counter {
+    margin-right: 20px;
+  }
 }
 
 .offer__slider-wrapper {
@@ -915,6 +944,11 @@ a {
 .offer__slide {
   width: 100%;
   height: 390px;
+}
+@media screen and (max-width: 450px) {
+  .offer__slide {
+    max-width: 414px;
+  }
 }
 
 .offer__slide img {
@@ -1092,6 +1126,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 450px) {
+  .calculating__total {
+    padding: 0 10px;
+  }
+}
 
 .calculating__result {
   font-size: 18px;
@@ -1219,7 +1258,7 @@ a {
 }
 @media screen and (max-width: 450px) {
   .order__form {
-    padding: 0 47px;
+    padding: 0 67px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1426,6 +1465,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
   z-index: 100;
+}
+@media screen and (max-width: 450px) {
+  .sidepanel {
+    left: 2px;
+  }
 }
 
 .sidepanel__text {
