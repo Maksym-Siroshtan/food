@@ -82,6 +82,10 @@
   max-width: 930px;
   justify-content: space-between;
   margin: 30px auto 0 auto;
+
+  @include phones-l {
+    padding: 0 20px;
+  }
 }
 
 .calculating__choose_big .calculating__choose-item {
@@ -103,7 +107,8 @@
   align-items: center;
 
   @include phones-l {
-    padding: 0 10px;
+    padding: 0 15px;
+    align-items: flex-end;
   }
 }
 

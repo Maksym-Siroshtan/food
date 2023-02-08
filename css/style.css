@@ -1101,6 +1101,11 @@ a {
           justify-content: space-between;
   margin: 30px auto 0 auto;
 }
+@media screen and (max-width: 450px) {
+  .calculating__choose_big {
+    padding: 0 20px;
+  }
+}
 
 .calculating__choose_big .calculating__choose-item {
   max-width: 200px;
@@ -1128,7 +1133,10 @@ a {
 }
 @media screen and (max-width: 450px) {
   .calculating__total {
-    padding: 0 10px;
+    padding: 0 15px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -1236,7 +1244,7 @@ a {
 }
 
 .order {
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .order .title {
@@ -1294,6 +1302,7 @@ a {
 @media screen and (max-width: 450px) {
   .promotion {
     padding: 0;
+    margin-top: 20px;
   }
 }
 
@@ -1331,8 +1340,8 @@ a {
 }
 @media screen and (max-width: 450px) {
   .promotion__text {
-    width: 100%;
-    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -1353,8 +1362,9 @@ a {
 }
 @media screen and (max-width: 450px) {
   .promotion__timer {
-    width: 100%;
-    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 
