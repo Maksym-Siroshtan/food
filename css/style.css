@@ -759,7 +759,7 @@ a {
 
 .bgc_blue {
   position: absolute;
-  right: 0;
+  right: -9px;
   top: -168px;
   width: 50vw;
   height: 900px;
@@ -768,7 +768,7 @@ a {
 }
 @media screen and (max-width: 450px) {
   .bgc_blue {
-    right: -9px;
+    right: 0;
     top: -408px;
   }
 }

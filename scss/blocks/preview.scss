@@ -22,7 +22,7 @@
 
 .bgc_blue {
   position: absolute;
-  right: 0;
+  right: -9px;
   top: -168px;
   width: 50vw;
   height: 900px;
@@ -30,7 +30,7 @@
   z-index: -1;
 
   @include phones-l {
-    right: -9px;
+    right: 0;
     top: -408px;
   }
 }
