@@ -11,6 +11,10 @@
   justify-content: space-between;
   align-items: flex-end;
 
+  @include tablets {
+    padding: 0 20px;
+  }
+
   @include phones-l {
     padding: 0 5px;
   }

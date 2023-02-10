@@ -2,9 +2,10 @@
   display: flex;
   max-width: 1130px;
   margin: 0 auto;
+  margin-bottom: 50px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
 
-  @include phones-l {
+  @include tablets {
     flex-wrap: wrap;
     margin-bottom: 20px;
   }
@@ -13,6 +14,10 @@
 .tabcontent {
   max-width: 850px;
   position: relative;
+
+  @include tablets {
+    margin-bottom: 25px;
+  }
 
   @include phones-l {
     margin-bottom: 60px;
@@ -30,8 +35,8 @@
   position: absolute;
   top: 300px;
   right: -177px;
-  width: 550px;
-  height: 359px;
+  max-width: 550px;
+  max-height: 359px;
   background: rgba(251, 254, 93, 0.8);
   padding: 50px;
   font-size: 24px;
@@ -39,14 +44,24 @@
   line-height: 36px;
   color: rgba(0, 0, 0, 0.7);
 
-  @include phones-l {
+  @include tablets-xl {
+    top: 70%;
+    right: 0;
+    max-width: 345px;
+    height: 150px;
+    padding: 6px;
+    font-size: 17px;
+    line-height: normal;
+    overflow: hidden;
+  }
+
+  @include phones-xl {
     top: 190px;
     right: 0;
     max-width: 345px;
     height: 150px;
     padding: 6px;
     font-size: 17px;
-    font-weight: 300;
     line-height: normal;
   }
 }
@@ -76,7 +91,7 @@
   padding-left: 26px;
   border-left: 1px solid #000;
 
-  @include phones-l {
+  @include tablets {
     padding: 0;
     border-left: none;
     margin: 0;

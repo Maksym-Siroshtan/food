@@ -4,6 +4,10 @@
   align-items: center;
   padding: 50px 100px;
 
+  @include tablets {
+    flex-direction: column;
+  }
+
   @include phones-l {
     padding: 50px 10px;
     flex-wrap: wrap;
@@ -14,6 +18,11 @@
   display: flex;
   justify-content: space-between;
   max-width: 550px;
+
+  @include tablets-xl {
+    margin-bottom: 30px;
+    margin-right: 20px;
+  }
 }
 
 .header__right-block {

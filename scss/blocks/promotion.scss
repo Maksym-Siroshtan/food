@@ -2,6 +2,10 @@
   padding: 70px 0 240px 0;
   position: relative;
 
+  @include tablets-xl {
+    padding: 70px 30px 20px;
+  }
+
   @include phones-l {
     padding: 0;
     margin-top: 20px;
@@ -11,7 +15,7 @@
 .promotion .container {
   display: flex;
 
-  @include phones-l {
+  @include tablets {
     flex-direction: column;
   }
 }
@@ -25,17 +29,24 @@
   top: -50px;
   left: 0;
 
-  @include phones-l {
+  @include tablets {
     width: 100%;
+    height: 100%;
   }
 }
 
 .promotion__text {
   width: 50%;
 
+  @include tablets-xl {
+    width: 100%;
+    text-align: center;
+  }
+
   @include phones-l {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
   }
 }
 
@@ -44,6 +55,10 @@
   font-size: 20px;
   line-height: 24px;
   font-weight: 300;
+
+  @include tablets {
+    margin-bottom: 20px;
+  }
 }
 
 .promotion__descr span {
@@ -54,9 +69,8 @@
 .promotion__timer {
   width: 50%;
 
-  @include phones-l {
-    width: 80%;
-    margin: 0 auto;
+  @include tablets {
+    width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -64,8 +78,8 @@
 .promotion__timer .title {
   text-align: right;
 
-  @include phones-l {
-    text-align: left;
+  @include tablets {
+    text-align: center;
   }
 }
 
@@ -76,8 +90,8 @@
   justify-content: space-between;
   align-items: center;
 
-  @include phones-l {
-    padding-left: 0;
+  @include tablets {
+    padding: 0;
   }
 }
 
