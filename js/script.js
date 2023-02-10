@@ -381,8 +381,8 @@ window.addEventListener("DOMContentLoaded", () => {
     slidesField = document.querySelector(".offer__slider-inner"),
     width = window.getComputedStyle(slidesWrapper).width;
 
-   let slideIndex = 1;
-   /* offset = 0;
+   let slideIndex = 1,
+    offset = 0;
 
   if (slideIndex < 10) {
     total.textContent = `0${slides.length}`;
@@ -495,10 +495,10 @@ window.addEventListener("DOMContentLoaded", () => {
       dotsOpacityStyle(dots);
     });
   });
- */
+ 
   //Простой пример слайдера!
 
-   showSlides(slideIndex);
+   /* showSlides(slideIndex);
 
   if (slideIndex < 10) {
     total.textContent = `0${slides.length}`;
@@ -536,7 +536,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   next.addEventListener("click", () => {
     plusSlides(1);
-  });
+  }); */
 
   //Calc
 

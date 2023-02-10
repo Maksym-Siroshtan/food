@@ -77,7 +77,7 @@
   justify-content: space-between;
   margin: 30px auto 0 auto;
 
-  @include phones-l {
+  @include phones-xl {
     justify-content: space-around;
   }
 }

@@ -1146,7 +1146,7 @@ a {
           justify-content: space-between;
   margin: 30px auto 0 auto;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .calculating__choose_medium {
     -ms-flex-pack: distribute;
         justify-content: space-around;
