@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/cookieConsent.css" />
     <!-- <link
       rel="stylesheet"
       type="text/css"
@@ -349,15 +348,16 @@
 
     <div class="popup">
       <div class="container">
-        Я соглашаюсь, что мои cookie будут использованы
-        <button class="btn_cookie" data-canсel>Cancel</button>
-        <button class="btn_cookie" data-confirm>Accept</button>
+        <div class="popup_title">Я соглашаюсь, что мои cookie будут использованы</div>
+        <div class="popup_btns">
+          <button class="btn_cookie" data-canсel>Cancel</button>
+          <button class="btn_cookie" data-confirm>Accept</button>
+        </div>
       </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.6/axios.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/cookieConsent.js"></script>
+    <script src="js/bundle.js"></script>
     <!-- <script
       src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
       data-cfasync="false"

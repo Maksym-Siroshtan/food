@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+function cookie() {
   // Cookie storage с помощью функций
 
   const cookieStorage = {
@@ -128,4 +128,6 @@ window.addEventListener("DOMContentLoaded", () => {
   function myScripts() {
     console.log("Loading...");
   } */
-});
+}
+
+module.exports = cookie;
