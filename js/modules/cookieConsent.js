@@ -130,4 +130,4 @@ function cookie() {
   } */
 }
 
-module.exports = cookie;
+export default cookie;

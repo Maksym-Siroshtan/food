@@ -1,19 +1,28 @@
-function slider() {
+function slider({
+  containerSelector,
+  slideSelector,
+  prevArrowSelector,
+  nextArrowSelector,
+  totalCountSelector,
+  currentCountSelector,
+  wrapperSelector,
+  fieldSelector,
+} = {}) {
   //Slider
 
   //Более сложный пример слайдера!
 
-  const slides = document.querySelectorAll(".offer__slide"),
-    slider = document.querySelector(".offer__slider"),
-    prev = document.querySelector(".offer__slider-prev"),
-    next = document.querySelector(".offer__slider-next"),
-    current = document.querySelector("#current"),
-    total = document.querySelector("#total"),
-    slidesWrapper = document.querySelector(".offer__slider-wrapper"),
-    slidesField = document.querySelector(".offer__slider-inner"),
+  const slides = document.querySelectorAll(slideSelector),
+    slider = document.querySelector(containerSelector),
+    prev = document.querySelector(prevArrowSelector),
+    next = document.querySelector(nextArrowSelector),
+    current = document.querySelector(currentCountSelector),
+    total = document.querySelector(totalCountSelector),
+    slidesWrapper = document.querySelector(wrapperSelector),
+    slidesField = document.querySelector(fieldSelector),
     width = window.getComputedStyle(slidesWrapper).width;
 
-   let slideIndex = 1,
+  let slideIndex = 1,
     offset = 0;
 
   if (slideIndex < 10) {
@@ -127,10 +136,10 @@ function slider() {
       dotsOpacityStyle(dots);
     });
   });
- 
+
   //Простой пример слайдера!
 
-   /* showSlides(slideIndex);
+  /* showSlides(slideIndex);
 
   if (slideIndex < 10) {
     total.textContent = `0${slides.length}`;
@@ -171,4 +180,4 @@ function slider() {
   }); */
 }
 
-module.exports = slider;
+export default slider;

@@ -1,3 +1,5 @@
+import {getResourse} from '../services/services';
+
 function cards() {
   //The menu is written using classes
 
@@ -79,18 +81,7 @@ function cards() {
     "menu__item"
   ).render();
 
-  //Получение данных с json-server с помощью promise(async, await). За основу взяты классы
-  /*   const getResourse = async (url) => {
-    const res = await fetch(url);
-
-    if (!res.ok) {
-      throw new Error(`Could not fetch ${url}, status ${res.status}`);
-    }
-
-    return await res.json();
-  };
-
-  getResourse("http://localhost:3000/menu").then((data) => {
+ /*  getResourse("http://localhost:3000/menu").then((data) => {
     data.forEach(({ img, altimg, title, descr, price }) => {
       new MenuCard(
         img,
@@ -143,4 +134,4 @@ function cards() {
   } */
 }
 
-module.exports = cards;
+export default cards;
