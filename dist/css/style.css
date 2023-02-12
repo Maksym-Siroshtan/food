@@ -797,23 +797,24 @@ a {
   .offer__advantages {
     margin: 0 auto;
     padding: 20px 0;
+    text-align: center;
   }
 }
-.offer__advantagesh2 {
+.offer__advantages h2 {
   font-weight: 700;
   font-size: 20px;
   margin-top: 20px;
 }
 @media screen and (max-width: 450px) {
-  .offer__advantagesh2 {
+  .offer__advantages h2 {
     text-align: center;
   }
 }
-.offer__advantagesh2:first-child {
+.offer__advantages h2:first-child {
   margin-top: 70px;
 }
 @media screen and (max-width: 450px) {
-  .offer__advantagesh2:first-child {
+  .offer__advantages h2:first-child {
     margin-top: 0;
   }
 }
