@@ -1,0 +1,49 @@
+.preview {
+  padding: 28px 0 100px 0;
+  position: relative;
+
+  @include tablets {
+    padding: 0;
+    margin-bottom: 120px;
+  }
+
+  @include phones-l {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  &__life {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 35px;
+
+    @include tablets {
+      margin: 35px 0 0 10px;
+      text-align: center;
+    }
+
+    @include phones-l {
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+.bgc_blue {
+  position: absolute;
+  right: -9px;
+  top: -168px;
+  width: 50vw;
+  height: 900px;
+  background: rgba(146, 242, 255, 0.15);
+  z-index: -1;
+
+  @include tablets-xl {
+    top: -317px;
+  }
+
+  @include phones-l {
+    right: 0;
+    top: -408px;
+  }
+}
