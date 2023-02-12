@@ -560,7 +560,9 @@ function openModal(modalSelector, modalTimerId) {
   modal.classList.add("show");
   modal.classList.remove("hide");
   document.body.style.overflow = "hidden";
-  clearTimeout(modalTimerId);
+  if (modalTimerId) {
+    clearTimeout(modalTimerId);
+  }
 }
 function closeModal(modalSelector) {
   const modal = document.querySelector(modalSelector);
