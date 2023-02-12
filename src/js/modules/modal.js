@@ -3,7 +3,10 @@ function openModal(modalSelector, modalTimerId) {
   modal.classList.add("show");
   modal.classList.remove("hide");
   document.body.style.overflow = "hidden";
-  clearTimeout(modalTimerId);
+
+  if (modalTimerId) {
+    clearTimeout(modalTimerId);
+  }
 }
 
 function closeModal(modalSelector) {
@@ -34,8 +37,6 @@ function modal(triggerSelector, modalSelector, modalTimerId) {
       closeModal(modalSelector);
     }
   });
-
-  
 
   function showModalByScroll() {
     if (
