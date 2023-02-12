@@ -1,13 +1,18 @@
 .offer {
   padding: 70px 0 100px 0;
   position: relative;
+ 
+  @include tablets-xl {
+    padding-bottom: 30px;
+  }
 
   .container {
     display: flex;
     justify-content: space-between;
 
-    @include tablets {
+    @include tablets-xl {
       flex-direction: column;
+      justify-content: center;
       align-items: center;
     }
   }
@@ -37,7 +42,7 @@
     font-weight: 300;
     line-height: 24px;
 
-    @include tablets {
+    @include tablets-xl {
       margin-bottom: 20px;
     }
   }
@@ -53,8 +58,13 @@
   }
 
   &__advantages {
-    max-width: 330px;
+    width: 330px;
     margin-top: 50px;
+
+    @include tablets-xl {
+      width: 60%;
+      margin-top: 0;
+    }
 
     @include phones-l {
       margin: 0 auto;
@@ -67,7 +77,7 @@
       font-size: 20px;
       margin-top: 20px;
 
-      @include phones-l {
+      @include tablets-xl {
         text-align: center;
       }
       &:first-child {
