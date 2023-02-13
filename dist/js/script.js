@@ -81,59 +81,10 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/script.js");
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./src/js/main.js":
-/*!************************!*\
-  !*** ./src/js/main.js ***!
-  \************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/calc */ "./src/js/modules/calc.js");
-/* harmony import */ var _modules_cards__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/cards */ "./src/js/modules/cards.js");
-/* harmony import */ var _modules_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/forms */ "./src/js/modules/forms.js");
-/* harmony import */ var _modules_modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/modal */ "./src/js/modules/modal.js");
-/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
-/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
-/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/timer */ "./src/js/modules/timer.js");
-/* harmony import */ var _modules_cookieConsent__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/cookieConsent */ "./src/js/modules/cookieConsent.js");
-
-
-
-
-
-
-
-
-
-window.addEventListener("DOMContentLoaded", () => {
-  const modalTimerId = setTimeout(() => Object(_modules_modal__WEBPACK_IMPORTED_MODULE_3__["openModal"])(".modal", modalTimerId), 300000);
-  Object(_modules_calc__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  Object(_modules_cards__WEBPACK_IMPORTED_MODULE_1__["default"])();
-  Object(_modules_forms__WEBPACK_IMPORTED_MODULE_2__["default"])("form", modalTimerId);
-  Object(_modules_modal__WEBPACK_IMPORTED_MODULE_3__["default"])("[data-modal]", ".modal", modalTimerId);
-  Object(_modules_slider__WEBPACK_IMPORTED_MODULE_4__["default"])({
-    containerSelector: ".offer__slider",
-    slideSelector: ".offer__slide",
-    prevArrowSelector: ".offer__slider-prev",
-    nextArrowSelector: ".offer__slider-next",
-    totalCountSelector: "#total",
-    currentCountSelector: "#current",
-    wrapperSelector: ".offer__slider-wrapper",
-    fieldSelector: ".offer__slider-inner"
-  });
-  Object(_modules_tabs__WEBPACK_IMPORTED_MODULE_5__["default"])(".tabcontent", ".tabheader__item", ".tabheader__items", "tabheader__item_active");
-  Object(_modules_timer__WEBPACK_IMPORTED_MODULE_6__["default"])(".timer", "2023-03-11");
-  Object(_modules_cookieConsent__WEBPACK_IMPORTED_MODULE_7__["default"])();
-});
-
-/***/ }),
 
 /***/ "./src/js/modules/calc.js":
 /*!********************************!*\
@@ -867,6 +818,55 @@ function timer(selector, deadline) {
   setClock(selector, deadline);
 }
 /* harmony default export */ __webpack_exports__["default"] = (timer);
+
+/***/ }),
+
+/***/ "./src/js/script.js":
+/*!**************************!*\
+  !*** ./src/js/script.js ***!
+  \**************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/calc */ "./src/js/modules/calc.js");
+/* harmony import */ var _modules_cards__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/cards */ "./src/js/modules/cards.js");
+/* harmony import */ var _modules_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/forms */ "./src/js/modules/forms.js");
+/* harmony import */ var _modules_modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/modal */ "./src/js/modules/modal.js");
+/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
+/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
+/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/timer */ "./src/js/modules/timer.js");
+/* harmony import */ var _modules_cookieConsent__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/cookieConsent */ "./src/js/modules/cookieConsent.js");
+
+
+
+
+
+
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  const modalTimerId = setTimeout(() => Object(_modules_modal__WEBPACK_IMPORTED_MODULE_3__["openModal"])(".modal", modalTimerId), 300000);
+  Object(_modules_calc__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_modules_cards__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  Object(_modules_forms__WEBPACK_IMPORTED_MODULE_2__["default"])("form", modalTimerId);
+  Object(_modules_modal__WEBPACK_IMPORTED_MODULE_3__["default"])("[data-modal]", ".modal", modalTimerId);
+  Object(_modules_slider__WEBPACK_IMPORTED_MODULE_4__["default"])({
+    containerSelector: ".offer__slider",
+    slideSelector: ".offer__slide",
+    prevArrowSelector: ".offer__slider-prev",
+    nextArrowSelector: ".offer__slider-next",
+    totalCountSelector: "#total",
+    currentCountSelector: "#current",
+    wrapperSelector: ".offer__slider-wrapper",
+    fieldSelector: ".offer__slider-inner"
+  });
+  Object(_modules_tabs__WEBPACK_IMPORTED_MODULE_5__["default"])(".tabcontent", ".tabheader__item", ".tabheader__items", "tabheader__item_active");
+  Object(_modules_timer__WEBPACK_IMPORTED_MODULE_6__["default"])(".timer", "2023-03-11");
+  Object(_modules_cookieConsent__WEBPACK_IMPORTED_MODULE_7__["default"])();
+});
 
 /***/ }),
 
