@@ -7,12 +7,12 @@ function slider({
   currentCountSelector,
   wrapperSelector,
   fieldSelector,
-} = {}) {
+}) {
   //Slider
 
   //Более сложный пример слайдера!
 
-  const slides = document.querySelectorAll(slideSelector),
+  /* const slides = document.querySelectorAll(slideSelector),
     slider = document.querySelector(containerSelector),
     prev = document.querySelector(prevArrowSelector),
     next = document.querySelector(nextArrowSelector),
@@ -135,11 +135,19 @@ function slider({
 
       dotsOpacityStyle(dots);
     });
-  });
+  }); */
 
   //Простой пример слайдера!
 
-  /* showSlides(slideIndex);
+  const slides = document.querySelectorAll(slideSelector),
+    slider = document.querySelector(containerSelector),
+    prev = document.querySelector(prevArrowSelector),
+    next = document.querySelector(nextArrowSelector),
+    current = document.querySelector(currentCountSelector),
+    total = document.querySelector(totalCountSelector);
+
+  let slideIndex = 1;
+  showSlides(slideIndex);
 
   if (slideIndex < 10) {
     total.textContent = `0${slides.length}`;
@@ -177,7 +185,7 @@ function slider({
 
   next.addEventListener("click", () => {
     plusSlides(1);
-  }); */
+  });
 }
 
 export default slider;
