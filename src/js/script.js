@@ -34,6 +34,6 @@ window.addEventListener("DOMContentLoaded", () => {
     ".tabheader__items",
     "tabheader__item_active"
   );
-  timer(".timer", "2023-03-11");
+  timer(".timer", "2023-05-11");
   cookie();
 });

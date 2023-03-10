@@ -1,8 +1,12 @@
+import calcScroll from "./calcScroll";
+
 function openModal(modalSelector, modalTimerId) {
-  const modal = document.querySelector(modalSelector);
+  const modal = document.querySelector(modalSelector),
+    scroll = calcScroll();
   modal.classList.add("show");
   modal.classList.remove("hide");
   document.body.style.overflow = "hidden";
+  document.body.style.marginRight = `${scroll}px`;
 
   if (modalTimerId) {
     clearTimeout(modalTimerId);
@@ -14,6 +18,7 @@ function closeModal(modalSelector) {
   modal.classList.add("hide");
   modal.classList.remove("show");
   document.body.style.overflow = "";
+  document.body.style.marginRight = `0px`;
 }
 
 function modal(triggerSelector, modalSelector, modalTimerId) {
