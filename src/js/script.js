@@ -11,7 +11,7 @@ import { openModal } from "./modules/modal";
 window.addEventListener("DOMContentLoaded", () => {
   const modalTimerId = setTimeout(
     () => openModal(".modal", modalTimerId),
-    300000
+    60000
   );
 
   calc();
